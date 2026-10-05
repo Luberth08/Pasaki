@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:uml="http://schema.omg.org/spec/UML/2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1">
+  <xmi:Documentation exporter="Enterprise Architect" exporterVersion="6.5"/>
+  <uml:Model xmi:type="uml:Model" xmi:id="EA_Model_Pasaki" name="PasakiDomainModel">
+    <packagedElement xmi:type="uml:Package" xmi:id="Pkg_Dominio" name="Dominio_Pasaki">
+      
+      <!-- Clase Cliente -->
+      <packagedElement xmi:type="uml:Class" xmi:id="Class_Cliente" name="Cliente">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_id" name="id" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_nombre" name="nombre*" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_apellido" name="apellido" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_alias" name="alias" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_ci" name="ci" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_tel" name="telefono_principal*" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_dir" name="direccion" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_genero" name="genero" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_fnac" name="fecha_nacimiento" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_ingreso" name="ingreso_mensual_cents" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_negra" name="es_lista_negra" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Boolean"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_created" name="create_at" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_C_updated" name="update_at" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+        </ownedAttribute>
+      </packagedElement>
+
+      <!-- Clase Contacto -->
+      <packagedElement xmi:type="uml:Class" xmi:id="Class_Contacto" name="Contacto">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_Ct_id" name="id" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_Ct_cid" name="cliente_id*" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_Ct_tel" name="telefono*" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_Ct_etiq" name="etiqueta" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_Ct_created" name="create_at" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_Ct_updated" name="update_at" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="http://schema.omg.org/spec/UML/2.1/uml.xml#Integer"/>
+        </ownedAttribute>
+      </packagedElement>
+
+      <!-- Clase Prestamo -->
+      <packagedElement xmi:type="uml:Class" xmi:id="Class_Prestamo" name="Prestamo">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_id" name="id" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_cid" name="cliente_id*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_cap" name="capital_inicial_cents*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_tasa" name="tasa_porcentaje*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_per" name="tasa_periodo*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_mod" name="modalidad*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_scap" name="saldo_capital_cents*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_sint" name="saldo_interes_cents*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_est" name="estado" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_finic" name="fecha_inicio*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_created" name="created_at" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_P_updated" name="updated_at" visibility="private"/>
+      </packagedElement>
+
+      <!-- Clase MovimientoFinanciero -->
+      <packagedElement xmi:type="uml:Class" xmi:id="Class_Movimiento" name="MovimientoFinanciero">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_M_id" name="id" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_M_pid" name="prestamo_id*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_M_fecha" name="fecha*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_M_tipo" name="tipo*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_M_det" name="detalle*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_M_debe" name="debe_cents" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_M_haber" name="haber_cents" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_M_scap" name="saldo_capital_cents*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_M_sint" name="saldo_interes_cents*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_M_created" name="created_at" visibility="private"/>
+      </packagedElement>
+
+      <!-- Clase GarantiaPrendaria -->
+      <packagedElement xmi:type="uml:Class" xmi:id="Class_Garantia" name="GarantiaPrendaria">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_G_id" name="id" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_G_pid" name="prestamo_id*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_G_desc" name="descripcion*" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_G_est" name="estado" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_G_created" name="created_at" visibility="private"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="Attr_G_updated" name="updated_at" visibility="private"/>
+      </packagedElement>
+
+      <!-- Asociaciones -->
+      <packagedElement xmi:type="uml:Association" xmi:id="Assoc_Cliente_Contacto" name="tiene_contactos">
+        <memberEnd xmi:idref="End_Cliente_Contacto_C"/>
+        <memberEnd xmi:idref="End_Cliente_Contacto_Ct"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="End_Cliente_Contacto_C" type="Class_Cliente" lower="1" upper="1"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="End_Cliente_Contacto_Ct" type="Class_Contacto" lower="0" upper="*"/>
+      </packagedElement>
+
+      <packagedElement xmi:type="uml:Association" xmi:id="Assoc_Cliente_Prestamo" name="posee_prestamos">
+        <memberEnd xmi:idref="End_Cliente_Prestamo_C"/>
+        <memberEnd xmi:idref="End_Cliente_Prestamo_P"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="End_Cliente_Prestamo_C" type="Class_Cliente" lower="1" upper="1"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="End_Cliente_Prestamo_P" type="Class_Prestamo" lower="0" upper="*"/>
+      </packagedElement>
+
+      <packagedElement xmi:type="uml:Association" xmi:id="Assoc_Prestamo_Movimiento" name="registra_movimientos">
+        <memberEnd xmi:idref="End_Prestamo_Movimiento_P"/>
+        <memberEnd xmi:idref="End_Prestamo_Movimiento_M"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="End_Prestamo_Movimiento_P" type="Class_Prestamo" lower="1" upper="1"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="End_Prestamo_Movimiento_M" type="Class_Movimiento" lower="1" upper="*"/>
+      </packagedElement>
+
+      <packagedElement xmi:type="uml:Association" xmi:id="Assoc_Prestamo_Garantia" name="respaldado_por">
+        <memberEnd xmi:idref="End_Prestamo_Garantia_P"/>
+        <memberEnd xmi:idref="End_Prestamo_Garantia_G"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="End_Prestamo_Garantia_P" type="Class_Prestamo" lower="1" upper="1"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="End_Prestamo_Garantia_G" type="Class_Garantia" lower="0" upper="*"/>
+      </packagedElement>
+
+    </packagedElement>
+  </uml:Model>
+</xmi:XMI>
